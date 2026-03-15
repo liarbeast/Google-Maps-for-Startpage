@@ -1,0 +1,19 @@
+{
+  "manifest_version": 23,
+  "name": "Google Maps for Startpage",
+  "version": "1.0",
+
+  "description": "Automatically routes the Startpage 'Maps' button to Google Maps.",
+
+  "icons": {
+    "32": "icons/icon.svg",
+    "64": "icons/icon.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.startpage.com/sp/search"],
+      "js": ["gmaps-startpage.js"]
+    }
+  ]
+}
